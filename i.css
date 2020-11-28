@@ -1,0 +1,401 @@
+body,p,span{
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Rubik', sans-serif;
+}
+
+.graybg{
+    background-color: #ffffff;
+}
+
+
+/* Being Css*/
+
+.main-header .container-fluid
+.slider-section .container-fluid {
+    max-width: 1480px;
+}
+
+.default-btn{
+    text-decoration: none;
+    display: inline-block;
+    background-color: #e73c3e;
+    border-color: #e73c3e;
+    color: #ffffff !important; 
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 6px 18px;
+    position: relative;
+    z-index: 1;
+}
+
+.default-btn::after{
+    content:"" ;
+    position: absolute;
+    left: 0;
+    top:0;
+    width:0;
+    height: 100%;
+    background-color:#111;
+    border-color: #111;
+    border-radius: 5px;
+    transition: .4s;
+    z-index: -1;
+}
+
+.default-btn:hover::after{
+    width: 100%;   
+}
+
+.default-btn:hover{
+    border-color: #111;
+}
+
+
+
+
+/* menu*/
+ul.our-primary-menu{}
+ul.our-primary-menu li{}
+ul.our-primary-menu li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    color: #111;
+    font-weight: 500;
+    
+}
+ul.our-primary-menu li a:hover{}
+
+
+/* d-down*/
+
+ul.our-primary-menu li{
+    position: relative;
+}
+
+
+
+
+ul.our-primary-menu li ul{
+    position: absolute;
+    width: 200px;
+    left: 0;
+    top: 160%;
+    background: #fafafa;
+    list-style: none;
+    padding:12px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    
+}
+ul.our-primary-menu li ul li{
+    flex-direction: column;
+}
+
+ul.our-primary-menu li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
+ul.our-primary-menu li ul li a{
+    
+}
+
+
+.header-info{}
+.header-search{
+    width: 60px;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 20px;
+    border-right: 1px solid #ddd;
+}
+.header-call{
+    width: 200px;
+}
+.header-call-icon {
+	font-size: 29px;
+	color: #e73c3e;
+}
+.header-call-info span {
+	color: #606060;
+}
+.header-call-info a {
+    text-decoration: none;
+    color: #111 !important;
+    font-weight: 500;
+}
+.header-button{}
+
+
+/* slider/ banner*/
+.slider-section{
+    background: url(img/main-banner2.jpg) no-repeat no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.slider-content-wrap{
+    height:100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+}
+.slider-content h6{
+    color: #e73c3e;
+}
+.slider-content h1{
+    font-size: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.slider-content p{
+    color: #606060;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Roboto;
+    margin-bottom: 30px;
+}
+
+.social-icon{
+    position: absolute;
+    left: 5%;
+    bottom: 0%;  
+}
+.social-icon ul{
+    list-style: none;
+    padding-left: 0%;
+}
+
+.social-icon ul li{
+    
+}
+.social-icon ul li span{
+    display: inline-block;
+    font-size: 20px;
+    margin-right: 40px;
+    position: relative;
+}
+.social-icon ul li span::after{
+    content: "";
+    height: 1px;
+    background: #111;
+    width: 30px;
+    position: absolute;
+    right:-35px;
+    top: 50%;
+
+    
+}
+
+
+.social-icon ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 12px;
+    color: #111;
+    font-size: 20px;
+}
+
+
+
+/* part -2 logo section*/
+
+.logo-section{
+    border-bottom: 1px solid #ddd;
+}
+.claint-logo ul{
+    display: inline-block;
+    padding-left: 0;
+    list-style: none;
+}
+.claint-logo li ul{}
+.claint-logo li ul li{
+  
+}
+.claint-logo li ul li a{}
+
+/* about */
+.about-image{
+    position: relative;
+    
+}
+.about-img-text{  
+    position: absolute;
+	right: 0;
+	bottom: 0;
+	background: url(img/shape.png);
+	height: 190px;
+	width: 175px;
+	background-size: contain;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+
+.about-img-text h2{
+    color: #e73c3e;
+}
+.about-img-text p{
+    color: #111;
+    font-weight: 500;
+}
+.about-text{}
+.finix-text h6{
+    color: #e73c3e;
+    font-weight: 400;
+}
+.finix-text h2{
+    font-size: 32px;
+    font-weight: 400;
+}
+.finix-text p{
+  color:#606060 ;  
+  font-size: 16px;
+}
+
+.finix-text strong{
+    color: #606060;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.finix-text ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    
+    
+}
+
+.finix-text ul li{
+    padding: 8px 0;
+}
+.finix-text ul li::before{
+    content: "\f00c ";
+    font-family: 'Font Awesome 5 free';
+    font-weight: 600;
+    color: #e73c3e;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+
+
+
+/******** ---*/
+
+.features-item{
+    background: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: .6s;
+}
+
+.features-item:hover{
+    transform: translateY(-12px);
+}
+
+
+.features-item::before{
+    content: "";
+    position: absolute;
+    top: -35px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 120px;
+    height: 110px;
+    background: #fdebeb;
+    border-radius: 50%;
+}
+.features-item .ft-icon {
+    position: relative;
+    z-index: 1;
+}
+
+
+.features-item .ft-icon i{
+    
+    font-size: 30px;
+    background: #fff;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    color: #e73c3e;  
+}
+
+.features-item:hover .ft-icon i{
+    color: #fff;
+    background: #e73c3e;
+}
+
+
+
+.finix-text{
+    position: relative;
+}
+
+.play-animation-btn {
+	width: 90px;
+	height: 90px;
+	display: inline-block;
+	background: #fff;
+	font-size: 60px;
+	text-align: center;
+	line-height: 90px;
+	color: #e73a3e;
+	border-radius: 50%;
+	position: absolute;
+	right: 41%;
+	bottom: 51px
+}
+
+.play-animation-btn::before {
+    content: "";
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #e73a3e;
+    border-radius: 50%;
+    animation: palybtn 1.6s ease-out infinite;
+
+}
+
+@keyframes palybtn{
+    0%,30%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: .7;
+    }
+    100%{
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+
+
